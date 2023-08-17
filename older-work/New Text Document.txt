@@ -1,0 +1,44 @@
+series in pandas
+
+.get() method to find any value of key..if the key does not exist, it will return null	
+
+Dataframes in pandas 
+
+2d structure to store data
+
+two access the element, there are following ways....[] notations and loc,iloc or . dot notation
+
+df.col2  // to fetch whole column of a dataframe
+
+df.col2.row2 or df.col2['row2'] or df['col2']['row2']  // to fetch single element of the dataframe
+
+df.shape  // to fetch the no. of rows and columns ---> it gives a tuple (no. of rows ,no. of columns)
+
+
+df.loc[ 'row_label' , 'col_label' ]   to fetch an element using its label 
+
+df.iloc[ row_index , col_index ]   to fetch an element using its index
+
+
+df.col1.row1 = 10 // to update the value of the original data frame
+
+you can also update using square bracket [] notations 
+
+df.loc['row1':'row3','col2'] = [10,20,30]    //it will be applied elements of row1 to row3 in col1
+
+df.loc[:,'col2'] = 30    // it will apply to all the rows of col2
+
+
+
+pd.DataFrame(data, index = for rows-label, columns= column-label)
+
+whenever you create a data frame, you have to specify the no. of rows 
+
+df.head(n) // it will return the first five rows of the data frame if n is not specified 
+
+df.tail(n) // it will return the bottom five rows of the data frame if n is not specified
+
+
+
+
+
